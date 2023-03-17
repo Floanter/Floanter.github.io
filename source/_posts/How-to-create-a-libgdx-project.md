@@ -3,7 +3,7 @@ title: How to create a libgdx project.
 date: 2023-03-17 16:20:09
 tags: Java, Libgdx, English
 categories: Tutorial
-cover: ../images/crearProyectoLibgdx\cover.png
+cover: ../images/crearProyectoLibgdx/cover.png
 ---
 
 # How to create a project with Java and Libgdx.
