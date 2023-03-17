@@ -32,9 +32,7 @@ notice: Hola! espero que te lo pases bien en mi blog y te sea util.
 
 # Lista de música a la derecha: título de la canción, autor, enlace, portada.
 musics:
-  - ['安河桥', '宋冬野', 'http://ting6.yymp3.net:82/new25/songdongye/11.mp3', 'https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500']
-  - ['卡布达', '暂无', '/music/kabuda.mp3', 'https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500']
-  - ['八连杀', '苏三', '/music/八连杀.mp3', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SWQx6YrNA8lElaG4OOKLkNkNzLO1PflKg&usqp=CAU']
+  - ['Slowly', 'Alexander Plam', '/music/slowly-alexander-plam.mp3', '/imgs/Alexander-Plam_Avatar.jpg']
 
 # auto presentación.
 likes:

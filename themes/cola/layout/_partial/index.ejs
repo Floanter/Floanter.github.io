@@ -79,7 +79,7 @@
         },
       }) %>
       <%- list_tags(site.tags, { class: { ul: 'tags' }, order: -1, show_count: false }) %>
-      <%- list_archives({ order: -1, format: 'YYYY年MM月', transform(str) {
+      <%- list_archives({ order: -1, format: 'YYYY-MM', transform(str) {
         return str
       } }) %>
     </div>
