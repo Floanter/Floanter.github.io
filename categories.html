@@ -197,7 +197,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Como crear un proyecto de Libgdx.","path":"2023/03/16/Como-crear-un-proyecto-de-Libgdx/"},{"title":"Hello World","path":"2023/03/17/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"Como crear un proyecto de Libgdx.","cover":"../images/crearProyectoLibgdx\\cover.png","path":"2023/03/16/Como-crear-un-proyecto-de-Libgdx/"},{"title":"How to create a libgdx project.","cover":"../images/crearProyectoLibgdx\\cover.png","path":"2023/03/17/How-to-create-a-libgdx-project/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -269,7 +269,7 @@
         </a>
         <a href="/tags">
           <div>
-            <span>1</span>
+            <span>2</span>
             <span>🏷️</span>
           </div>
         </a>
@@ -332,7 +332,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>Número de artículos：</span>
-        <span>2 篇</span>
+        <span>2 Artículos</span>
       </p>
       <p class="main-left--subtitle">
         <span>Noticias recientes：</span>
@@ -340,7 +340,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>Tiempo en línea：</span>
-        <span>395天</span>
+        <span>395</span>
       </p>
       <p class="main-left--subtitle">
         <span>Versión actual：</span>
@@ -510,7 +510,7 @@ pre:active {
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"暂无","url":"/music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"八连杀","artist":"苏三","url":"/music/八连杀.mp3","cover":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SWQx6YrNA8lElaG4OOKLkNkNzLO1PflKg&usqp=CAU"}]`)
+  const musics = JSON.parse(`[{"name":"Slowly","artist":"Alexander Plam","url":"/music/slowly-alexander-plam.mp3","cover":"/imgs/Alexander-Plam_Avatar.jpg"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,

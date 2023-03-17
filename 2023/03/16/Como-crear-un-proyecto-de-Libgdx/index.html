@@ -197,7 +197,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Como crear un proyecto de Libgdx.","path":"2023/03/16/Como-crear-un-proyecto-de-Libgdx/"},{"title":"Hello World","path":"2023/03/17/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"Como crear un proyecto de Libgdx.","cover":"../images/crearProyectoLibgdx\\cover.png","path":"2023/03/16/Como-crear-un-proyecto-de-Libgdx/"},{"title":"How to create a libgdx project.","cover":"../images/crearProyectoLibgdx\\cover.png","path":"2023/03/17/How-to-create-a-libgdx-project/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -269,7 +269,7 @@
         </a>
         <a href="/tags">
           <div>
-            <span>1</span>
+            <span>2</span>
             <span>🏷️</span>
           </div>
         </a>
@@ -332,7 +332,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>Número de artículos：</span>
-        <span>2 篇</span>
+        <span>2 Artículos</span>
       </p>
       <p class="main-left--subtitle">
         <span>Noticias recientes：</span>
@@ -340,7 +340,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>Tiempo en línea：</span>
-        <span>395天</span>
+        <span>395</span>
       </p>
       <p class="main-left--subtitle">
         <span>Versión actual：</span>
@@ -390,43 +390,46 @@ pre:active {
           
           <div class="article-info--tags">
             <span>Etiqueta：</span>
-            <a class="tag-link" href="/tags/Java-Libgdx/" rel="tag">Java, Libgdx</a>
+            <a class="tag-link" href="/tags/Java-Libgdx-Espanol/" rel="tag">Java, Libgdx, Español</a>
           </div>
           
           <p class="article-info--date">Etiqueta：2023-03-16 18:00:46</p>
         </div>
-        <img src="/imgs/default-cover.webp" alt="" class="article-cover">
+        <img src="/../images/crearProyectoLibgdx%5Ccover.png" alt="" class="article-cover">
       </div>
     </div>
     <article class="article-content">
-      <h1 id="Como-crear-un-proyecto-con-Java-y-Libgdx"><a href="#Como-crear-un-proyecto-con-Java-y-Libgdx" class="headerlink" title="Como crear un proyecto con Java y Libgdx."></a>Como crear un proyecto con Java y Libgdx.</h1><p>Para aprender como crear un proyecto de Libgdx, no usaremos el generador oficial de Libgdx mas bien, usaremos Gdx-Liftoff que nos permitirá usar mas lenguajes y extensiones de terceros. Para este ejemplo crearemos el proyecto de “Pong” que será el juego del siguiente tutorial.</p>
-<h3 id="Descargar-OpenJDK"><a href="#Descargar-OpenJDK" class="headerlink" title="Descargar OpenJDK"></a>Descargar OpenJDK</h3><p>Para descargar e instalar openjdk simplemente los descargaremos de <a target="_blank" rel="noopener" href="https://adoptium.net/es/temurin/">Temurin</a>.</p>
-<p><img src="/../images/TemurinPagina.png" alt="Descarga de Temurin"></p>
-<p>Es importante activar las de: añadir al PATH, Asociar .jar y Establecer la variable JAVA_HOME.</p>
-<p><img src="/../images/OpcionesInstalacionTemurin.png" alt="Opciones de instalacion"></p>
-<h3 id="Descargar-Gdx-Liftoff"><a href="#Descargar-Gdx-Liftoff" class="headerlink" title="Descargar Gdx-Liftoff"></a>Descargar Gdx-Liftoff</h3><p>Vamos al repositorio de <a target="_blank" rel="noopener" href="https://github.com/tommyettinger/gdx-liftoff/releases">Gdx-liftoff</a> y descargamos el archivo .zip y lo descomprimimos.</p>
-<p><img src="/../images/DescargarGdxLiftoff.png" alt="Descargar gdx-liftoff"></p>
+      <h1 id="Como-crear-un-proyecto-con-Java-y-Libgdx"><a href="#Como-crear-un-proyecto-con-Java-y-Libgdx" class="headerlink" title="Como crear un proyecto con Java y Libgdx."></a>Como crear un proyecto con Java y Libgdx.</h1><p>Para aprender como crear un proyecto de Libgdx, no usaremos el generador oficial de Libgdx, mas bien, usaremos Gdx-Liftoff que nos permitirá usar mas lenguajes y extensiones de terceros. </p>
+<p>Para este ejemplo, crearemos el proyecto de “Pong” que será el juego del siguiente tutorial.</p>
+<h3 id="Descargar-OpenJDK"><a href="#Descargar-OpenJDK" class="headerlink" title="Descargar OpenJDK"></a>Descargar OpenJDK</h3><p>Para descargar e instalar openjdk simplemente lo descargamos de <a target="_blank" rel="noopener" href="https://adoptium.net/es/temurin/">Temurin</a>.</p>
+<p><img src="/../images/crearProyectoLibgdx/TemurinPagina.png" alt="Descarga de Temurin"></p>
+<p>Es importante activar las opciones de: añadir al PATH, asociar .jar y establecer la variable JAVA_HOME.</p>
+<p><img src="/../images/crearProyectoLibgdx/OpcionesInstalacionTemurin.png" alt="Opciones de instalación"></p>
+<h3 id="Descargar-Gdx-Liftoff"><a href="#Descargar-Gdx-Liftoff" class="headerlink" title="Descargar Gdx-Liftoff"></a>Descargar Gdx-Liftoff</h3><p>Vamos al repositorio de <a target="_blank" rel="noopener" href="https://github.com/tommyettinger/gdx-liftoff/releases">Gdx-liftoff</a>, descargamos el archivo .zip y lo descomprimimos.</p>
+<p><img src="/../images/crearProyectoLibgdx/DescargarGdxLiftoff.png" alt="Descargar gdx-liftoff"></p>
 <h3 id="Configurar-proyecto"><a href="#Configurar-proyecto" class="headerlink" title="Configurar proyecto"></a>Configurar proyecto</h3><p>Abrimos Gdx-Liftoff y rellenamos las opciones:</p>
-<p><img src="/../images/OpcionesDelGenerado1.png" alt="Primeras opciones de Gdx-liftoff"></p>
+<p><img src="/../images/crearProyectoLibgdx/OpcionesDelGenerado1.png" alt="Primeras opciones de Gdx-liftoff"></p>
 <ol>
 <li>Título del juego.</li>
 <li>Dominio y nombre del juego (com.domino.nombredeljuego).</li>
 <li>Nombre de la clase principal.</li>
-<li>Carpeta vacía donde se genera el proyecto.</li>
+<li>Carpeta vacía donde se generará el proyecto.</li>
 <li>Dirección del SDK de Android (No es necesario si no se creara para android).</li>
-<li>Plataformas para las que se crea el juego.</li>
+<li>Plataformas para las que se creará el juego.</li>
 </ol>
-<p><img src="/../images/OpcionesDelGenerado2.png" alt="Segundas opciones de Gdx-liftoff"><br>7. Usar otros lenguajes (no usar si se trabaja con Html y GWT).</p>
-<p><img src="/../images/OpcionesDelGenerado3.png" alt="Terceras opciones de Gdx-liftoff"><br>8. Extensiones oficiales de Libgdx.</p>
-<p><img src="/../images/OpcionesDelGenerado4.png" alt="Cuartas opciones de Gdx-liftoff"><br>9. Extensiones de terceros (en este caso usaremos ShapeDrawer). </p>
-<h3 id="Generar-proyecto"><a href="#Generar-proyecto" class="headerlink" title="Generar proyecto"></a>Generar proyecto</h3><p>Damos click en “Generate project!” y esperamos a que termine y diga “SETUP COMPLETE” y listo.</p>
-<p><img src="/../images/GenerarProyecto.png" alt="Generar proyecto"></p>
+<p><img src="/../images/crearProyectoLibgdx/OpcionesDelGenerado2.png" alt="Segundas opciones de Gdx-liftoff"><br>7. Usar otros lenguajes (no usar si se trabaja con HTML y GWT).</p>
+<p><img src="/../images/crearProyectoLibgdx/OpcionesDelGenerado3.png" alt="Terceras opciones de Gdx-liftoff"><br>8. Extensiones oficiales de Libgdx.</p>
+<p><img src="/../images/crearProyectoLibgdx/OpcionesDelGenerado4.png" alt="Cuartas opciones de Gdx-liftoff"><br>9. Extensiones de terceros (en este caso usaremos ShapeDrawer para dibujar formas geometricas). </p>
+<h3 id="Generar-proyecto"><a href="#Generar-proyecto" class="headerlink" title="Generar proyecto"></a>Generar proyecto</h3><p>Damos clic en “Generate project!”, esperamos a que termine y diga “SETUP COMPLETE” y listo.</p>
+<p><img src="/../images/crearProyectoLibgdx/GenerarProyecto.png" alt="Generar proyecto"></p>
 <h3 id="Probar-proyecto"><a href="#Probar-proyecto" class="headerlink" title="Probar proyecto"></a>Probar proyecto</h3><p>Vamos a los Tasks de Gradle &gt; lwjgl3 &gt; application &gt; run.</p>
-<p><img src="/../images/ProbarProyectoEscritorio.png" alt="Probar proyecto Task"><br><img src="/../images/ProbarProyectoEscritorio2.png" alt="Proba proyecto ventana"></p>
-<h3 id="Compilar-proyecto"><a href="#Compilar-proyecto" class="headerlink" title="Compilar proyecto"></a>Compilar proyecto</h3><p>Para generar un .jar para escritorio vamos a:<br>Tasks de Gradle &gt; lwjgl3 &gt; Tasks &gt; build &gt; jar.</p>
-<p><img src="/../images/CompilarJar.png" alt="Compilar escritorio"></p>
-<p>Para compilar para HTML vamos a:<br>Tasks de Gradle &gt; html &gt; Tasks &gt; other &gt; dist.</p>
-<p><img src="/../images/CompilarHTML.png" alt="Compilar HTML"></p>
+<p><img src="/../images/crearProyectoLibgdx/ProbarProyectoEscritorio.png" alt="Probar proyecto Task"><br><img src="/../images/crearProyectoLibgdx/ProbarProyectoEscritorio2.png" alt="Probar proyecto ventana"></p>
+<h3 id="Compilar-proyecto"><a href="#Compilar-proyecto" class="headerlink" title="Compilar proyecto"></a>Compilar proyecto</h3><p>Para generar un .jar para escritorio vamos a:</p>
+<p>Tasks de Gradle &gt; lwjgl3 &gt; Tasks &gt; build &gt; jar.</p>
+<p><img src="/../images/crearProyectoLibgdx/CompilarJar.png" alt="Compilar escritorio"></p>
+<p>Para compilar para HTML vamos a:</p>
+<p>Tasks de Gradle &gt; html &gt; Tasks &gt; other &gt; dist.</p>
+<p><img src="/../images/crearProyectoLibgdx/CompilarHTML.png" alt="Compilar HTML"></p>
 <h3 id="Despedida"><a href="#Despedida" class="headerlink" title="Despedida"></a>Despedida</h3><p>Espero que te haya ayudado a crear tu proyecto de Ligdx de una manera fácil y entendible, si tienes alguna duda o sugerencia no dudes en comentar 😁</p>
 <p>Bueno, me piro vampiro, ten un buen dia.</p>
 
@@ -457,7 +460,7 @@ pre:active {
           
             <p>
               <span>Anterior：</span>
-              <a href="/2023/03/17/hello-world/">Hello World</a>
+              <a href="/2023/03/17/How-to-create-a-libgdx-project/">How to create a libgdx project.</a>
             </p>
            
           
@@ -560,7 +563,7 @@ pre:active {
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"暂无","url":"/music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"八连杀","artist":"苏三","url":"/music/八连杀.mp3","cover":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SWQx6YrNA8lElaG4OOKLkNkNzLO1PflKg&usqp=CAU"}]`)
+  const musics = JSON.parse(`[{"name":"Slowly","artist":"Alexander Plam","url":"/music/slowly-alexander-plam.mp3","cover":"/imgs/Alexander-Plam_Avatar.jpg"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
